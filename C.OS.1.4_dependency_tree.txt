@@ -1,0 +1,137 @@
+C.OS.1.4 Repository Dependency Tree
+=====================================
+
+📁 C.OS.1.4/ (Root)
+├── 🎨 FRONTEND SECTION
+│   └── 📁 frontend/
+│       ├── 📁 src/
+│       │   ├── 📁 components/
+│       │   │   ├── 📁 Chat/
+│       │   │   │   ├── 📄 MessageBubble.js
+│       │   │   │   ├── 📄 InputArea.js
+│       │   │   │   ├── 📄 Header.js
+│       │   │   │   ├── 📄 ErrorBoundary.js
+│       │   │   │   ├── 📄 index.js
+│       │   │   │   ├── 📄 IMPLEMENTATION_GUIDE.md
+│       │   │   │   └── 📄 TESTING_CHECKLIST.md
+│       │   │   ├── 📄 UserProfilePanel.js
+│       │   │   ├── 📄 WebhookDebugger.js
+│       │   │   ├── 📄 DebugPanel.js
+│       │   │   └── 📄 components.js
+│       │   ├── 📁 services/
+│       │   │   ├── 📄 cacheService.js
+│       │   │   ├── 📄 webhookService.js
+│       │   │   └── 📄 performanceMonitor.js
+│       │   ├── 📁 config/
+│       │   │   └── 📄 webhookConfig.js
+│       │   ├── 📁 styles/
+│       │   ├── 📄 App.js (Main React App)
+│       │   ├── 📄 index.js (React Entry Point)
+│       │   ├── 📄 ChatPage.js
+│       │   ├── 📄 ModernChatPage.js
+│       │   ├── 📄 ModernChatInterface.js
+│       │   ├── 📄 ChatDemo.js
+│       │   └── 📄 WebhookDebugPage.js
+│       ├── 📁 public/
+│       │   ├── 📁 fonts/
+│       │   ├── 📄 static.json
+│       │   └── 📄 intervention-demo.js
+│       ├── 📄 package.json ⚙️ (React Dependencies)
+│       ├── 📄 tailwind.config.js ⚙️ (Styling Config)
+│       ├── 📄 postcss.config.js ⚙️ (CSS Processing)
+│       ├── 📄 .env 🔐 (Environment Variables)
+│       ├── 📄 yarn.lock 🔒 (Dependency Lock)
+│       └── 📄 .gitignore
+│
+├── 🔧 BACKEND SECTION
+│   └── 📁 backend/
+│       ├── 📄 server.py 🐍 (FastAPI Main Server)
+│       ├── 📄 requirements.txt ⚙️ (Python Dependencies)
+│       └── 📄 .env 🔐 (Backend Environment)
+│
+├── 📋 CONFIGURATION FILES
+│   ├── 📄 vercel.json ☁️ (Deployment Config)
+│   ├── 📄 app.json 📱 (Heroku Config)
+│   ├── 📄 .gitignore 🚫
+│   ├── 📄 .vercelignore ☁️
+│   ├── 📄 .env.example 📝
+│   ├── 📄 .gitconfig ⚙️
+│   ├── 📄 nginx.conf 🌐
+│   ├── 📄 package-lock.json 🔒
+│   └── 📄 yarn.lock 🔒
+│
+├── 📚 DOCUMENTATION
+│   ├── 📄 README.md 📖 (Main Documentation)
+│   ├── 📄 README_VERCEL.md ☁️
+│   ├── 📄 VERCEL_DEPLOYMENT.md ☁️
+│   ├── 📄 VERCEL_404_FIX.md ☁️
+│   ├── 📄 STREAMING_ANIMATION_COMPLETE.md 🎬
+│   ├── 📄 STREAMING_FIX_COMPLETE.md 🔧
+│   ├── 📄 WEBHOOK_DEBUG_SUMMARY.md 🔍
+│   ├── 📄 WEBHOOK_HARDCODING_COMPLETE.md 🔗
+│   ├── 📄 REDIS_CACHE_INTEGRATION.md 💾
+│   ├── 📄 test_result.md 🧪
+│   └── 📁 frontend/
+│       ├── 📄 CHAT_INTEGRATION_GUIDE.md
+│       ├── 📄 DARK_MODE.md
+│       ├── 📄 EMAIL_CONFIRMATION.md
+│       ├── 📄 FONT_SYSTEM.md
+│       ├── 📄 IMPLEMENTATION_COMPLETE.md
+│       ├── 📄 MODERN_CHAT_INTERFACE.md
+│       ├── 📄 README.md
+│       ├── 📄 SIGNUP_FLOW_FIXED.md
+│       ├── 📄 SIGNUP_INTEGRATION.md
+│       ├── 📄 SIGNUP_RETRY_CONFIG.md
+│       └── 📄 TEXT_CHAT_API_UPDATED.md
+│
+├── 🛠️ DEVELOPMENT TOOLS
+│   ├── 📁 .devcontainer/
+│   │   ├── 📄 context_params.json
+│   │   └── 📄 code_server_config.yaml
+│   ├── 📁 .emergent/
+│   │   └── 📄 emergent.yml
+│   ├── 📁 tests/
+│   │   └── 📄 __init__.py
+│   └── 📁 scripts/
+│
+├── 🚀 DEPLOYMENT SCRIPTS
+│   ├── 📄 deploy-vercel.sh ☁️ (Vercel Deployment)
+│   ├── 📄 pre-deploy-check.sh ✅ (Pre-deployment Checks)
+│   ├── 📄 entrypoint.sh 🎯 (Container Entry)
+│   └── 📄 backend_test.py 🧪 (Backend Testing)
+│
+└── 📊 PROJECT METADATA
+    └── 📄 project structure 📋
+
+DEPENDENCY RELATIONSHIPS:
+========================
+
+🎨 FRONTEND DEPENDENCIES (package.json):
+├── Core Framework: React 19.0.0, React-DOM 19.0.0
+├── HTTP Client: Axios 1.8.4
+├── UI Components: Lucide-React 0.513.0, Framer-Motion 12.16.0
+├── Routing: React-Router-DOM 7.5.1
+├── Markdown: React-Markdown 10.1.0
+├── Styling: Tailwind CSS 3.4.17, PostCSS 8.4.49
+├── Build Tools: React-Scripts 5.0.1
+└── Dev Tools: ESLint, Prettier
+
+🔧 BACKEND DEPENDENCIES (requirements.txt):
+├── Web Framework: FastAPI 0.110.1, Uvicorn 0.25.0
+├── Database: PyMongo 4.5.0, Motor 3.3.1
+├── Cloud Services: Boto3 1.34.129+
+├── Authentication: PyJWT 2.10.1+, Passlib 1.7.4+
+├── Data Processing: Pandas 2.2.0+, NumPy 1.26.0+
+├── Validation: Pydantic 2.6.4+, Email-Validator 2.2.0+
+├── HTTP: Requests 2.31.0+
+└── Development: Pytest 8.0.0+, Black 24.1.1+, MyPy 1.8.0+
+
+☁️ DEPLOYMENT STACK:
+├── Frontend: Vercel (React SPA)
+├── Backend: FastAPI Server (separate deployment)
+├── Database: MongoDB
+├── Cache: Redis
+└── CDN: Vercel Edge Network
+
+🔄 DATA FLOW:
+User → Vercel Frontend → FastAPI Backend → MongoDB/Redis → Response 
